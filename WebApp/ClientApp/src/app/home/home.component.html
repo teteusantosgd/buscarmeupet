@@ -1,0 +1,19 @@
+<h3 class="title">
+  Por favor, faça o upload de uma foto do cachorro que tu está procurando
+</h3>
+
+<div class="search">
+  <input (change)="onFileSelected($event)" #fileInput type="file" id="file" accept="image/png, image/jpg, image/jpeg">
+
+  <button (click)="find()" class="btn btn-primary btn-search" [disabled]="loading">
+    {{ loading ? 'Procurando...' : 'Procurar meu cachorro' }}
+  </button>
+</div>
+
+<img [src]="previewImage" *ngIf="previewImage" alt="Image Preview" class="preview">
+
+<div class="row">
+  <div *ngFor="let pet of pets" class="col-md-3">
+    <img [src]="'/assets/Fotos/' + pet.image" alt="" class="pet-image">
+  </div>
+</div>

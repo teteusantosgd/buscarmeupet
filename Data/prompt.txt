@@ -1,0 +1,17 @@
+identifique a raça, cor, características e todas as outras informações que puder extrair sobre o cachorro na foto. 
+o retorno deve ser no seguinte formato: 
+{
+    'valid': true,
+    'raca': 'apenas o nome da raça',
+    'cor': '',
+    'pelagem': '',
+    'olhos': '',
+    'focinho': '',
+    'tamanho': '',
+    'idade': '',
+    'outrasInformacoes': 'outras informações sobre a foto'
+}
+se a imagem não conter um cachorro, ou o cachorro da foto for um desenho, retorne o seguinte json:
+{
+    'valid': false
+}

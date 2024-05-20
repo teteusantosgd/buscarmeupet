@@ -1,0 +1,22 @@
+.title {
+    margin-bottom: 20px;
+}
+
+.search {
+    margin-bottom: 30px;
+}
+
+.btn-search {
+    margin-left: 20px;
+}
+
+.preview {
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 25px;
+}
+
+.pet-image {
+    max-width: 400px;
+    max-height: 400px;
+}
