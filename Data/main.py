@@ -12,7 +12,9 @@ import PIL.Image
 import re
 from pymongo import MongoClient
 import json
-genai.configure(api_key="AIzaSyBsgCgtPDG9Jwo-lmDpS8KXX9obpb0x3Fk")
+
+api_key = os.environ.get('GEMINI_API_KEY')
+genai.configure(api_key=api_key)
 
 def sort_filenames_by_number(filenames):
     """Sorts a list of filenames containing numbers by the numerical value."""
@@ -49,6 +51,7 @@ se a imagem não conter um cachorro, ou o cachorro da foto for um desenho, retor
 {
     "Valid": false
 }
+os valores de cara propriedade devem ser com letras minúsculas.
 """
 
 abrigo = 'resgatadosestancia'
